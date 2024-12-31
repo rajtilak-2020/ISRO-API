@@ -1,35 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    color: #eaeaea;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+
+.header {
+    text-align: center;
+    padding: 2em 1em;
+    background: linear-gradient(135deg, #2a024b, #4a0c78);
+    color: #ffffff;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #d1c4e9;
+}
+
+
 .container {
-    margin: auto 15%;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
 }
 
-.content {
-    max-width: 650px;
-    color: #242424;
-    font-family:
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Roboto",
-        "Oxygen",
-        "Ubuntu",
-        "Cantarell",
-        "Open Sans",
-        "Helvetica Neue",
-        "sans-serif"
-    ;
-}
 
-h1, h2, h3 {
-    font-weight: 600;
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid #eaecef;
-}
-
-li {
+.api-endpoints h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    color: #eaeaea;
+    border-bottom: 2px solid #4a0c78;
     padding-bottom: 0.5em;
 }
 
-a {
+.api-endpoints ul {
+    list-style: none;
+    padding: 0;
+}
+
+.api-endpoints li {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: #1e1e1e;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.api-endpoints li:hover {
+    box-shadow: 0 4px 15px rgba(74, 12, 120, 0.5);
+    transform: scale(1.02);
+}
+
+.api-endpoints a {
+    color: #b388ff;
     text-decoration: none;
-    color: rgb(67, 124, 230);
+    font-weight: bold;
+}
+
+.api-endpoints a:hover {
+    color: #d1c4e9;
+    text-decoration: underline;
+}
+
+
+.contribute {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.contribute .button {
+    display: inline-block;
+    background: #4a0c78;
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contribute .button:hover {
+    background: #b388ff;
+    transform: translateY(-3px);
+}
+
+
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1e1e1e;
+    color: #b388ff;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .api-endpoints h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 0.5em;
+    }
 }

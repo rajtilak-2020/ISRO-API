@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ISRO-API</title>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <h1>ISRO 🚀 API</h1>
-                <p>Open Source API for Launched Spacecrafts & Rockets data of ISRO</p>
-                <h2>API End-Points</h2>
-                <ul>
-                    <li>
-                        Spacecrafts:
-                        <a href="/api/spacecrafts" target="_blank" rel="noopener" rel="noreferrer">
-                            /api/spacecrafts
-                        </a>
-                    </li>
-                    <li>
-                        Launchers:
-                        <a href="/api/launchers" target="_blank" rel="noopener" rel="noreferrer">
-                            /api/launchers
-                        </a>
-                    </li>
-                    <li>
-                        Customer Satellites:
-                        <a href="/api/customer_satellites" target="_blank" rel="noopener" rel="noreferrer">
-                            /api/customer_satellites
-                        </a>
-                    </li>
-                    <li>
-                        Centres:
-                        <a href="/api/centres" target="_blank" rel="noopener" rel="noreferrer">
-                            /api/centres
-                        </a>
-                    </li>
-                </ul>
-                <hr/>
-                <h3>Contribute at <a href="https://github.com/isro/api">GitHub</a></h3>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO API - Explore Space Data</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1>ISRO 🚀 API</h1>
+        <p>Your gateway to ISRO's space exploration data</p>
+    </header>
+    <main class="container">
+        <section class="api-endpoints">
+            <h2>API End-Points</h2>
+            <ul>
+                <li>
+                    <strong>Spacecrafts:</strong>
+                    <a href="/api/spacecrafts" target="_blank" rel="noreferrer">
+                        /api/spacecrafts
+                    </a>
+                </li>
+                <li>
+                    <strong>Launchers:</strong>
+                    <a href="/api/launchers" target="_blank" rel="noopener noreferrer">
+                        /api/launchers
+                    </a>
+                </li>
+                <li>
+                    <strong>Customer Satellites:</strong>
+                    <a href="/api/customer_satellites" target="_blank" rel="noopener noreferrer">
+                        /api/customer_satellites
+                    </a>
+                </li>
+                <li>
+                    <strong>Centres:</strong>
+                    <a href="/api/centres" target="_blank" rel="noopener noreferrer">
+                        /api/centres
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="contribute">
+            <h3>Contribute</h3>
+            <p>Join the community and contribute to this open-source project:</p>
+            <a href="https://github.com/isro/api" target="_blank" class="button">View on GitHub</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> ISRO API. Built by Space Enthusiasts.</p>
+    </footer>
+    <script>
+        // Fetch the current year and display it in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>
